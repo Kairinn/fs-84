@@ -31,7 +31,9 @@ body {
   color: #ffffff;
 }
 
-.header-link:hover {
+.header-link:hover,
+.header-link:focus {
+  color: #ff6c00;
 }
 
 .header-tel {
