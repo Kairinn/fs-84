@@ -89,6 +89,7 @@ body {
 .header-logo {
 }
 .header-list {
+  display: flex;
 }
 .header-item {
 }
