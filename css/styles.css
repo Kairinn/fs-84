@@ -51,6 +51,13 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  min-width: 160px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  padding: 12px 20px;
 }
 
 .tittle {
@@ -187,9 +194,23 @@ body {
 .about {
   padding: 120px 0;
 }
-.about-item {
+.about-list {
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+  width: 50%;
+}
+.about-container {
+  display: flex;
+}
+.about-content {
+  max-width: 470px;
+  width: 50%;
 }
 .about-link {
+}
+.about-item {
+  width: calc((100% - 30px) / 2);
 }
 .about-subtitle {
   color: var(--secondary-title-color);
