@@ -72,7 +72,19 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
+
+.subtitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -178,6 +190,7 @@ body {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: var(--basic-margin);
 }
+
 .hero-title {
   font-family: "Raleway", sans-serif;
   font-size: 72px;
@@ -185,6 +198,14 @@ body {
   letter-spacing: 0.05em;
   color: var(--main-title-color);
   margin-bottom: var(--basic-margin);
+}
+
+.hero-title::before {
+  content: "";
+}
+
+.hero-title::after {
+  content: "";
 }
 
 .hero-description {
@@ -244,9 +265,16 @@ body {
 }
 /* Prices */
 .prices {
-  background-color: gray;
+  min-width: 1600px;
+  margin: 0 auto;
   padding: 120px 0;
+  background-image: url(../img/services-background-img.png),
+    linear-gradient(#111319, #111319);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 .subtitle-prices {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: var(--basic-margin);
@@ -262,20 +290,55 @@ body {
 .prices-list {
   padding: 30px 20px;
   flex-grow: 1;
+  margin-bottom: 44px;
 }
+
+.prices-list:first-child {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.prices-list:last-child {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+}
+
 .prices-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
 }
 .prices-item:not(:last-child) {
   margin-bottom: var(--basic-margin);
 }
+
+.prices-item::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+  order: 1;
+}
+
 .prices-item-text {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
+
+.prices-item-text:last-child {
+  order: 2;
+}
+
 .prices-btn {
   color: #ffffff;
   cursor: pointer;
