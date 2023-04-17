@@ -59,6 +59,14 @@ body {
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   padding: 12px 20px;
+  background-color: transparent;
+  transition: background-color 300ms linear, color 300ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  color: #fff;
 }
 
 .tittle {
@@ -101,8 +109,9 @@ body {
 /* Header */
 
 .header {
-  background-color: #8d93db;
-  padding: 32px 0;
+  position: absolute;
+  width: 100px;
+  padding-top: 32px;
 }
 .header-container {
   display: flex;
@@ -111,9 +120,10 @@ body {
 .header-navigation {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .header-logo {
-  margin-right: 131px;
+  margin-right: 130px;
 }
 .header-list {
   display: flex;
@@ -127,6 +137,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: #ffffff;
+  transition: color 300ms linear;
 }
 
 .header-link:hover,
@@ -344,7 +355,10 @@ body {
   cursor: pointer;
   display: block;
   margin: auto;
+  background-color: transparent;
+  transition: background-color 300ms linear, color 300ms linear;
 }
+
 /* Benefits */
 .benefits {
   padding: 120px 0;
@@ -499,6 +513,10 @@ body {
 }
 
 .barber-soc-link:hover {
+}
+
+.barbers-soc-icon {
+  transition: fill 300ms linear;
 }
 
 .barbers-soc-icon:hover {

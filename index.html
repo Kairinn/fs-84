@@ -24,6 +24,8 @@
       href="./img/favicon_package_v0.16/safari-pinned-tab.svg"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -59,29 +61,31 @@
 
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="hero-link link"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="hero-link link"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="hero-link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="hero-link link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-content">
             <p class="hero-subtitle subtitle">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title title">BarberShop</h1>
+            <h1 class="hero-title title" data-aos="flip-left">BarberShop</h1>
             <p class="hero-description">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
@@ -104,7 +108,9 @@
           </ul>
           <div class="about-content">
             <p class="about-subtitle subtitle">About</p>
-            <h2 class="about-title title">Best Barbershop in your city</h2>
+            <h2 class="about-title title" data-aos="fade-up">
+              Best Barbershop in your city
+            </h2>
             <p class="about-description">
               <span
                 >If you want to add more confidence to your image, you should
@@ -129,7 +135,9 @@
           <p class="subtitle-prices subtitle">
             Spend your time with the best masters
           </p>
-          <h2 class="title-prices title">Services and prices</h2>
+          <h2 class="title-prices title" data-aos="zoom-out-up">
+            Services and prices
+          </h2>
           <div class="prices-content">
             <ul class="prices-list list">
               <li class="prices-item">
@@ -429,24 +437,26 @@
           <p class="contact-hours">Every day from 9:00 to 22:00</p>
         </div>
       </section>
-
-      <!--/Section Contact-->
-      <footer>
-        <p>&copy;Copyright 2020</p>
-        <ul>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer nofollow"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer nofollow"
-              >Youtube</a
-            >
-          </li>
-        </ul>
-      </footer>
     </main>
-    <footer></footer>
+    <!--/Section Contact-->
+    <footer>
+      <p>&copy;Copyright 2020</p>
+      <ul>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer nofollow"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
