@@ -173,7 +173,19 @@ body {
 }
 .hero-list {
   width: 100px;
+  display: flex;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  gap: 40px;
 }
+
+.hero-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
 .hero-content {
   background-color: #303030;
   background-image: var(--bg-gradient), url(../img/preview.jpg);
@@ -183,9 +195,20 @@ body {
   padding: 272px 100px 208px;
   flex-grow: 1;
 }
+
+.hero-soc {
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 27px;
+  padding-bottom: 40px;
+}
+
 .hero-item {
 }
 .hero-link {
+  font-family: "Open Sans";
+  font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
