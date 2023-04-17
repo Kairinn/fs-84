@@ -25,7 +25,6 @@ ul {
 .container {
   width: 1200px;
   margin: 0 auto;
-  outline: 1px solid red;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -110,7 +109,7 @@ body {
 
 .header {
   position: absolute;
-  width: 100px;
+  width: 100%;
   padding-top: 32px;
 }
 .header-container {
@@ -174,6 +173,7 @@ body {
 .hero-list {
   width: 100px;
   display: flex;
+  align-items: center;
   transform: rotate(-90deg) translateY(100%);
   transform-origin: bottom left;
   gap: 40px;
