@@ -545,6 +545,7 @@ body {
 
 .barbers-soc-icon:hover {
   fill: currentColor;
+  background-color: var();
 }
 /* Gallery */
 .gallery {
