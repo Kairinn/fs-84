@@ -23,7 +23,7 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -31,6 +31,9 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -493,7 +496,8 @@ body {
 }
 
 .barbers-item {
-  width: calc((100% - 60px) / 3);
+  /* width: calc((100% - 60px) / 3); */
+  width: 100%;
 }
 .barbers-content {
   padding-top: 30px;
@@ -549,11 +553,14 @@ body {
 }
 /* Gallery */
 .gallery {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 .subtitle-gallery {
   color: var(--secondary-title-color);
-  margin-bottom: 44px;
+  /* margin-bottom: 44px; */
+  margin-bottom: 71px;
 }
 .visually-hidden {
 }
@@ -564,7 +571,8 @@ body {
 }
 
 .gallery-item {
-  width: calc((100% - 90px) / 4);
+  /* flex-basis: calc((100% - 90px) / 4); */
+  flex-basis: 100%;
 }
 /* Contact */
 .contact {
